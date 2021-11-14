@@ -1,0 +1,10 @@
+package mmms.member.db;
+
+import java.sql.Connection;
+
+public class JdbcUtil {
+
+	public static void commit(Connection con) {
+
+	}
+}
