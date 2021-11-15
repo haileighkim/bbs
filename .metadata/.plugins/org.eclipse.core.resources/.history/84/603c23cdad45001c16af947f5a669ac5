@@ -1,0 +1,19 @@
+package mmms.member.db;
+
+import java.util.Scanner;
+
+import mmms.member.controller.Membercontroller;
+
+public class MemberUI {
+
+	public static void main(String[] args) {
+		boolean isStop = false;
+		Membercontroller memberController = new Membercontroller();
+		Scanner sc = new Scanner(System.in);
+		do {
+
+		} while (!isStop);
+
+	}
+
+}

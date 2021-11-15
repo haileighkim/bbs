@@ -1,0 +1,19 @@
+ package mmms.member.svc;
+
+import java.sql.Connection;
+
+import mmms.member.dao.MemberDAO;
+import mmms.member.db.JdbcUtil;
+import mmms.member.vo.Member;
+
+public class MemberAddService {
+	public boolean addMember(Member newMember) throws Exception{
+		
+		Connection con = JdbcUtil.getConnection();
+		MemberDAO memberDAO = new MemberDAO(con);
+		memberDAO.insertNewMember(newMember);
+		//commit();
+		//rollback();
+		return false;
+	}
+}
