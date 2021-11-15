@@ -9,9 +9,6 @@ import mmms.member.controller.Membercontroller;
 public class MemberUI {
 
 	public static void main(String[] args) {
-		
-		System.out.println("Pull 연습");
-		
 		boolean isStop = false;
 		Membercontroller memberController = new Membercontroller();
 		Scanner sc = new Scanner(System.in);
